@@ -58,7 +58,19 @@
 
 <!--Embedded Audio Player  -->
 <!-- Use embedded playlist that loops  -->
-<audio src="/music/Confined.m4a"></audio>
+<!--BROKEN  -->
+
+<!-- <audio controls src="Confined.m4a">
+  <a href="Confined.m4a">Confined (1:40) - Instrumental</a>
+  </audio>
+<!- BROKEN -->
+
+
+<audio controls>
+  <source src="Confined.m4a" type="audio/m4a">
+  <a href="Confined.m4a" autostart="true" loop="true" width="2" height="0">Name of the song</a>
+</audio>
+
 
 
    <!-- Picture on left, Prod on top of it -->
