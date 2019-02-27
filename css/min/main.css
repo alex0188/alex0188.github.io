@@ -11,54 +11,119 @@
 /* Navigation Bar*/
 
 
-/*Week 6 Css code  */
+/* MAIN PAGE STYLING */
 body {
   font-family: Tahoma, Helvetica, Arial, sans-serif;
   /* Page background color */
   background-color: black;
   /* Text of body color */
   color: #E8E6E2;
-  font-size: 18px; }
+  font-size: 18px;
+}
+
+
+
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Times New Roman", serif; }
+  font-family: "Arial Black", serif; }
 
+
+/* Gold Border around text, red letters? */
 h1 {
-  font-size: 60px;
-  font-family: gotham;
-  font-weight: bold;
+  font-size: 80px;
+  font-family: Luminari;
+  flex-direction: column;
+  display: flex;
+  -webkit-text-fill-color: #808000;
+  -webkit-text-stroke-color: #D4AF37;
+  -webkit-text-stroke-width: 2px;
+
 }
 
 h2 {
-  font-size: 25px;
-  font-family: gotham;
+  font-size: 20px;
+  font-family: Arial;
   font-weight: bold;
+  padding-left: 250px;
+
+
 }
 
 
+
+
+
+/*Container holding the image and the text  */
+.imgcontainer {
+  position: relative;
+  padding-top: 30px;
+  /* Darken Image */
+  opacity: .9;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 200px;
+  left: 215px;
+  color: white;
+  padding-right: 20px;
+}
+
+
+
+
+
+/* Navigation
+TO DO
+      -- change the font (arial bold?),
+       */
+
 nav {
-  font-size: 25px;
+  font-size: 26px;
+  font-family: Rockwell;
+
   /*background of nav  */
   background-color: black; }
   nav ul li {
-    display: inline-block; }
+    display: inline-block;
+   }
     nav ul li a {
       display: block;
-      padding: 10px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-right: 15px;
+      padding-right: 30px;
       color: white;
-      border-right: 1px solid #34495e;
+      border-right: 1px solid white;
+      text-decoration: none;
+      transition: all 0.5s ease-out;
+     }
 
-      transition: all 300ms ease-in-out; }
       nav ul li a:hover, nav ul li a:focus {
         color: #ecf0f1;
-        /* change grey to be darker shade (hexic)*/
-        background-color: #8F8983; }
+        background-color: #8F8983;
+        /* grow on hover */
+        transform: scale(1.1);
+      }
 
-        /*Things to do to navigation  */
-        /*take underline away from under text, change the font (arial bold?),
-        center navigation bar   */
+    ul {
+      text-align: center;
+    }
+
+
+
+
+
+
 
 /* Social Media -- Fixed icon bar (vertically aligned 50% from top of screen) */
+/* TO DO -- move icon bar (padding left)
+        -- Add icon pictures
+        -- make background red, icon white
+Ease in broken
+ */
+
 .icon-bar {
   position: fixed;
   top: 50%;
@@ -71,8 +136,10 @@ nav {
   display: block;
   text-align: center;
   padding: 30px;
-  transition: all 0.3s ease;
+  transition: all 5s ease-in;
   color: white;
+  /* Custom red background color */
+  background-color: #cc0000;
   font-size: 20px;
 }
 .icon-bar a:hover {
@@ -92,7 +159,12 @@ nav {
   background: #3B5998;
   color: white;
 }
-/*^^ add picture icons to each link  */
+
+/*  Music Display*/
+.musicdisplay {
+  padding-left: 750px;
+
+}
 
 
 /* Fixed Footer  */
@@ -102,13 +174,82 @@ nav {
   left: 0;
   bottom: 0;
   width: 100%;
-  /*make footer background a lighter shade of black  */
   background-color: #0A0A0A;
   color: white;
   text-align: right;
   padding-right: 30px;
+}
+
+
+/* -------- Contact Form Styling ---------- */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contactcontainer {
+  border-radius: 5px;
+  background-color: #383838;
+  padding: 50px;
+  padding-right: 100px;
+  padding-left: 1100px;
+  padding-top: 100px;
+}
+
+.location {
+  padding-left: 150px;
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background-color: #383838;
+}
+
+
+
+
+
+
+
+
+.tutorialforum {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
 
 }
+
+/* Tutorial title */
+h3 {
+  padding-left: 100px;
+  font-family: American Typewriter;
+  font-size: 50px;
+}
+
+/* -------------------------------- */
+
 /* ------- VIEWS ------- */
 
 /* Tablet View */
